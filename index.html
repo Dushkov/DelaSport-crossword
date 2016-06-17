@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title" charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Crossword</title>
+</head>
+<body>
+    <div class="header">
+        <div id="colorline"></div>
+        <div class="wrapper">
+            <a href="#" id="logo" title="DelaSportCrossword"></a>
+        </div>
+        <div id="bottomshadow"></div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1> DelaSport Crossword</h1>
+            <form id="form">
+                <label for="instructions">
+                    <h4>Еnter words separated by comma ( , )!</h4></label>
+                <div class="row">
+                    <textarea id="inputWords" name="words" rows="5" cols="30" placeholder="words"></textarea>
+                    <div id="crosswordresult"></div>
+                </div>
+                <div class="button">
+                    <button type="button" value="submit" onclick="getWords();createPuzzle();">View the crossword</button>
+                    <button type="button" value="Clear" onclick="window.location.reload();"> Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="Assets/JS/main.js"></script>
+</body>
+</html>

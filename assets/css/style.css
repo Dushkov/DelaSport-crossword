@@ -1,0 +1,122 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+.header {
+    height: 78px;
+    background: url("../images/backgr_header.png") repeat-x;
+    position: relative;
+    z-index: 2;
+}
+.header #colorline {
+    background: url("../images/backgr_color_line.png") repeat-x;
+    height: 7px;
+}
+.wrapper {
+    /*width: 900px;*/
+    overflow: hidden;
+}
+.header #logo {
+    width: 243px;
+    height: 38px;
+    background: url("../images/logo_delasport.png") left center no-repeat;
+    float: left;
+    margin-top: 22px;
+    margin-left: 119px;
+    text-indent: 000px;
+}
+.header #bottomshadow {
+    height: 6px;
+    margin-top: 4px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.main {
+    background: url("../images/backgr_contact_us.jpg") repeat-x center top;
+    overflow: hidden;
+}
+.content {
+    min-height: 700px;
+    margin: 42px auto;
+    overflow: hidden;
+    padding-bottom: 100px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    background: white;
+    width: 80%;
+    border: 1px solid #8a4419;
+    border-style: inset;
+}
+.content h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #b70808;
+    margin: 18px 0 13px -30px;
+    height: 45px;
+    background: url("../images/backgr_title_separator.png") 59px bottom no-repeat;
+    padding-left: 60px;
+}
+label {
+    color: #b70808;
+    text-transform: uppercase;
+}
+form {
+    padding: 0 30px 0 30px;
+}
+.row {
+    overflow: hidden;
+}
+textarea {
+    font-size: 20px;
+    float: left;
+    display: block;
+    width: 50%;
+    height: 30%;
+    resize: none;
+    border-radius: 3px;
+    clear: right;
+}
+
+
+#crosswordresult {
+    font-size: 25px;
+    width: 40%;
+    float: right;
+}
+
+button {
+    background-color: #d34b4b;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+button:hover {
+    box-shadow: inset 0 1px 4px;
+    background-color: #eeeeee;
+    color: #d34b4b;
+}
+button:active {
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: solid 1px #203E5F;
+}
+
+@media (max-width: 800px) {
+#inputWords{
+    width: 100%;
+}
+#crosswordresult {
+      width: 100%;
+  }
+  .row{
+      overflow: visible;
+  }
+  .content{
+      width: 90%;
+  }
+  .content h1 {
+      font-size: 20px;
+  }
+}
